@@ -1,0 +1,99 @@
+/* global styles  */
+@font-face {
+    font-family: "potta_oneregular";
+    src: url("/assets/pottaone-regular-webfont.woff") format("woff2"),
+        url("/assets/pottaone-regular-webfont.woff format") format("woff"),
+        url("/assets/PottaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "potta_oneregular", sans-serif;
+    min-height: 100vh;
+    background-color: #e6e6e6;
+    font-family: system-ui, sans-serif;
+    background-image: url("/assets/tamaBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* element styles */
+h1 {
+    font-family: "Potta_oneregular", sans-serif;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: "potta_oneregular", sans-serif;
+    font-size: 1.7rem;
+}
+
+/* headings */
+header {
+    text-align: center;
+}
+
+/* layout */
+main {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.button-wrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats-wrapper {
+    font-family: "potta_oneregular", sans-serif;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.game-state-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* button styling*/
+button {
+    font-family: "potta_oneregular", sans-serif;
+    padding: 1.5rem;
+    line-height: 1em;
+    font-size: 1.5rem;
+
+    border: 0;
+    border-radius: 0.5rem;
+
+    color: white;
+    background-color: #4597f8;
+    transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:hover {
+    background-color: #3880d7;
+}
+
+button:active {
+    background-color: #2e6bb6;
+}
+
+/* images */
+.game-graphic {
+    margin-top: 155px;
+    max-height: 33vmin;
+    margin-bottom: 32px;
+}
+
+.hidden {
+    visibility: hidden;
+}
