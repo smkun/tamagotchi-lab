@@ -1,4 +1,4 @@
-/* global styles  */
+
 @font-face {
     font-family: "potta_oneregular";
     src: url("/assets/pottaone-regular-webfont.woff") format("woff2"),
@@ -22,7 +22,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* element styles */
 h1 {
     font-family: "Potta_oneregular", sans-serif;
     font-size: 3.5rem;
@@ -33,12 +32,10 @@ h2 {
     font-size: 1.7rem;
 }
 
-/* headings */
 header {
     text-align: center;
 }
 
-/* layout */
 main {
     max-width: 90vw;
     margin: 0 auto;
@@ -64,7 +61,7 @@ main {
     flex-direction: column;
 }
 
-/* button styling*/
+
 button {
     font-family: "potta_oneregular", sans-serif;
     padding: 1.5rem;
@@ -87,7 +84,6 @@ button:active {
     background-color: #2e6bb6;
 }
 
-/* images */
 .game-graphic {
     margin-top: 155px;
     max-height: 33vmin;
@@ -96,4 +92,26 @@ button:active {
 
 .hidden {
     visibility: hidden;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Smaller font size */
+    }
+    h1 {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+    h2 {
+        font-size: 1.5rem; /* Adjust subheading size */
+    }
+    .button-wrapper,
+    .stats-wrapper,
+    .game-state-wrapper {
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .game-graphic {
+        margin-top: 50px; /* Adjust spacing */
+        max-height: 50vmin; /* Adjust graphic size */
+    }
+    /* Further adjustments */
 }
